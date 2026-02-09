@@ -19,11 +19,11 @@ export class Dish {
   image?: string;
 
   @Prop({
-    required: false,
+    required: true,
     type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Taxonomy' }],
     default: [],
   })
-  taxonomies?: Taxonomy[];
+  taxonomies: Taxonomy[];
 }
 
 export const DishSchema = SchemaFactory.createForClass(Dish);

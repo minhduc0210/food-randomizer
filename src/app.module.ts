@@ -7,6 +7,7 @@ import { Connection, ConnectionStates } from 'mongoose';
 import { TaxonomyModule } from './taxonomy/taxonomy.module';
 import { VenueModule } from './venue/venue.module';
 import { DishModule } from './dish/dish.module';
+import { RecommendationModule } from './recommendation/recommendation.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { DishModule } from './dish/dish.module';
     TaxonomyModule,
     VenueModule,
     DishModule,
+    RecommendationModule,
   ],
   controllers: [AppController],
   providers: [AppService],

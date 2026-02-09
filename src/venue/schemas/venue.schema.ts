@@ -33,6 +33,7 @@ export class Venue {
     required: true,
     type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Dish' }],
     default: [],
+    index: true,
   })
   dishes: Dish[];
 }
